@@ -1,0 +1,81 @@
+@font-face{
+	src:url('../webfonts/GreatVibes-Regular.ttf');
+	font-family:GreatVibes ;
+	
+}
+@font-face{
+	
+	src:url('../webfonts/PoiretOne-Regular.ttf');
+	font-family:PoiretOne ;
+}
+body{
+	background-color: black;
+}
+.title{
+	height:300px;
+}
+.heading{
+	padding-top:50px;
+	font-family:PoiretOne;
+	color:#fff;
+	letter-spacing:7px;
+	font-weight: 100;
+}
+/*.box{
+   height: auto;
+}*/
+.box1{
+	 background-color:black;
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+     height:400px;
+}
+.box2{
+	 background-color:white;
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+     letter-spacing:7px;
+     font-family: GreatVibes;
+     font-weight:100;
+     height:400px;
+}
+#navigation {
+	background-color:rgba(0, 0, 0, 0.5);
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li {
+	padding: 0 10px;
+}
+
+#navigation li a {
+	color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar-toggler-icon {
+	background: url(../img/menu.png);
+	background-size: 100%;
+}
+
+.fixedNav #navigation {
+	position: fixed;
+	top: 0;
+}
+.fade {
+      transition: opacity 0.5s linear !important;
+}
+.image img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  border-radius: 50%;
+}
