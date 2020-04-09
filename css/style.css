@@ -8,6 +8,22 @@
 	src:url('../webfonts/PoiretOne-Regular.ttf');
 	font-family:PoiretOne ;
 }
+@font-face{
+	
+	src:url('../webfonts/IndieFlower-Regular.ttf');
+	font-family:flower ;
+}
+@font-face{
+	
+	src:url('../webfonts/Lobster-Regular.ttf');
+	font-family:lobster ;
+}
+@font-face{
+	
+	src:url('../webfonts/SpecialElite-Regular.ttf');
+	font-family:elite ;
+}
+
 body{
 	background-color: black;
 }
@@ -30,6 +46,7 @@ body{
      align-items: center;
      justify-content: center;
      height:400px;
+     font-family: flower;
 }
 .box2{
 	 background-color:white;
@@ -37,7 +54,7 @@ body{
      align-items: center;
      justify-content: center;
      letter-spacing:7px;
-     font-family: GreatVibes;
+     font-family: elite;
      font-weight:100;
      height:400px;
 }
@@ -79,3 +96,18 @@ body{
   padding: 5px;
   border-radius: 50%;
 }
+#home-getstarted {
+  position: relative;
+  background: url("../img/bw.jpg")no-repeat center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 150px; 
+  max-width:100%;
+  font-size: 40px;
+}
+ .pink{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%; 
+  }

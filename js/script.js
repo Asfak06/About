@@ -1,5 +1,12 @@
 
+
 $(document).ready(function(){  
+  
+  // $(".pink").parallax('10%', .5 ); 
+
+  new WOW().init();
+
+  $('.toast').toast('show');
 
   var typed = new Typed(".typed", {
 		strings: ["♪Everything under the sun is in tune <br> but the sun is eclipsed by the moon♪","_Brain damage(Pink Floyd)"],
