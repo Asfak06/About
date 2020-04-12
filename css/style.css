@@ -37,27 +37,6 @@ body{
 	letter-spacing:7px;
 	font-weight: 100;
 }
-/*.box{
-   height: auto;
-}*/
-.box1{
-	 background-color:black;
-	 display: flex;
-     align-items: center;
-     justify-content: center;
-     height:400px;
-     font-family: flower;
-}
-.box2{
-	 background-color:white;
-	 display: flex;
-     align-items: center;
-     justify-content: center;
-     letter-spacing:7px;
-     font-family: elite;
-     font-weight:100;
-     height:400px;
-}
 #navigation {
 	background-color:rgba(0, 0, 0, 0.5);
     padding: 20px 10px;
@@ -90,13 +69,33 @@ body{
 .fade {
       transition: opacity 0.5s linear !important;
 }
+
+.box1{
+	 background-color:black;
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+     height:400px;
+     font-family: flower;
+}
+.box2{
+	 background-color:white;
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+     letter-spacing:7px;
+     font-family: elite;
+     font-weight:100;
+     height:400px;
+}
+
 .image img {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
   border-radius: 50%;
 }
-#home-getstarted {
+#stripe{
   position: relative;
   background: url("../img/bw.jpg")no-repeat center fixed;
   background-size: cover;
@@ -106,8 +105,82 @@ body{
   max-width:100%;
   font-size: 40px;
 }
- .pink{
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%; 
-  }
+#ritual{
+	background-color:white;
+	color:black;
+}
+#ritual i{
+	font-size:150px;
+}
+#ritual .h3{
+	font-family:lobster;
+	letter-spacing:3px;
+    font-weight:100;
+    font-size:25px;
+}
+#ritual p{
+	font-family: GreatVibes;
+	letter-spacing:4px;
+    font-weight:100;
+    font-size:20px;
+}
+.square {
+	background-color:white;
+	width:20px;
+	height:20px;
+	margin:2px;
+}
+@media only screen and (max-width: 600px) {
+ .square{
+	width: 10px;
+	height: 10px;
+}
+}
+
+#squarebox{
+	background-color:black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*Sins*/
+.section {
+	padding: 70px 0;
+}
+.sinsSection{
+	background-color:black;
+	color: #fff;
+	font-family:arial;
+    font-weight:100;
+}
+
+.sins {
+	text-align: center;
+	margin-left: 10px;
+}
+
+.chart {
+	position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas {
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent {
+	color: #fff;
+    line-height: 152px;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.chart .percent:after {
+	content: '%';
+}
+/*sins end*/
