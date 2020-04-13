@@ -1,8 +1,8 @@
-// $(window).on("load", function() {
-// 	$(".loader .inner").fadeOut(500, function() {
-// 		$(".loader").fadeOut(750);
-// 	});
-// })
+$(window).on("load", function() {
+	$(".loader .inner").fadeOut(500, function() {
+		$(".loader").fadeOut(750);
+	});
+})
 // start square animation
 anime({
   targets:'.square',
