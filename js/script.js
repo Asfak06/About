@@ -1,14 +1,8 @@
-$(window).on("load", function() {
-
-	$(".loader .inner").fadeOut(500, function() {
-		$(".loader").fadeOut(750);
-	});
-
-})
-
-
-
-
+// $(window).on("load", function() {
+// 	$(".loader .inner").fadeOut(500, function() {
+// 		$(".loader").fadeOut(750);
+// 	});
+// })
 // start square animation
 anime({
   targets:'.square',
@@ -21,10 +15,7 @@ anime({
   easing:'easeInOutQuad'
 });
 // square animation end
-
-
 //start imaginanry gift
-
 let blinky;
 const output=document.querySelector('#header');
 const btns=document.querySelector('#btnC');
@@ -49,14 +40,9 @@ function changer () {
     output.textContent= randomarr ;   
  }
 // end imaginary gift
-
-
-$(document).ready(function(){  
-  
+$(document).ready(function(){   
   new WOW().init();
-
   $('.toast').toast('show');
-
   var typed = new Typed(".typed", {
 		strings: ["♪Everything under the sun is in tune <br> but the sun is eclipsed by the moon♪","_Brain damage(Pink Floyd)"],
 		typeSpeed: 70,
@@ -64,25 +50,17 @@ $(document).ready(function(){
 		startDelay: 1000,
 		showCursor: false
 	});
-
 	$("#navigation li a").click(function(e) {
 		e.preventDefault();
-
 		var targetElement = $(this).attr("href");
 		var targetPosition = $(targetElement).offset().top;
 		$("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
-
 	});
-
 	const nav = $("#navigation");
 	const navTop = nav.offset().top;
-
 	$(window).on("scroll", stickyNavigation);
-
 	function stickyNavigation() {
-
 		var body = $("body");
-
 		if($(window).scrollTop() >= navTop) {
 			body.css("padding-top", nav.outerHeight() + "px");
 			body.addClass("fixedNav");
@@ -92,7 +70,6 @@ $(document).ready(function(){
 			body.removeClass("fixedNav");
 		}
     }
-
     // sins start
     $('#sin-carousel').owlCarousel({
 	    loop:true,
@@ -112,9 +89,7 @@ $(document).ready(function(){
 	        }
 	    }
 	});
-
 	var sinsTopOffset = $(".sinsSection").offset().top;
-	
 	$(window).scroll(function() {
 		if(window.pageYOffset > sinsTopOffset - $(window).height() + 200) {
 			$('.chart').easyPieChart({
@@ -128,11 +103,8 @@ $(document).ready(function(){
 		        	$(this.el).find('.percent').text(Math.round(percent));
 		        }
 		    });
-
 		}
-
 	});
-
 	  $("#owl-demo").owlCarousel({    
       autoplay:true,
       autoplayHoverPause:true,
@@ -143,7 +115,5 @@ $(document).ready(function(){
       items:4,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3]
- 
      });
-
 });
