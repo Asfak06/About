@@ -1,3 +1,14 @@
+$(window).on("load", function() {
+
+	$(".loader .inner").fadeOut(1000, function() {
+		$(".loader").fadeOut(1250);
+	});
+
+})
+
+
+
+
 // start square animation
 anime({
   targets:'.square',
@@ -32,7 +43,8 @@ function stopChanger(e) {
 	row.prepend(h);
 }
 function changer () {
-    const arr=['a bird','a sunflower','a teddy','a cat','candis','a wallclock','a hug','a kiss','a cake','a dinner set'];
+    const arr=['a bird','a sunflower','a teddy','a cat','candies','a wallclock','a hug',
+    'a kiss','a cake','a dinner set','a book','a wink','an icecream'];
     const randomarr = arr[Math.floor(Math.random() * arr.length)];   
     output.textContent= randomarr ;   
  }
@@ -82,7 +94,7 @@ $(document).ready(function(){
     }
 
     // sins start
-    $('.owl-carousel').owlCarousel({
+    $('#sin-carousel').owlCarousel({
 	    loop:true,
 	    items: 4,
 	    responsive:{
@@ -102,7 +114,7 @@ $(document).ready(function(){
 	});
 
 	var sinsTopOffset = $(".sinsSection").offset().top;
-	var countUpFinished = false;
+	
 	$(window).scroll(function() {
 		if(window.pageYOffset > sinsTopOffset - $(window).height() + 200) {
 			$('.chart').easyPieChart({
@@ -120,5 +132,18 @@ $(document).ready(function(){
 		}
 
 	});
+
+	  $("#owl-demo").owlCarousel({    
+      autoplay:true,
+      autoplayHoverPause:true,
+      autoplayTimeout:3000,
+      autoplaySpeed:4000,
+      center:true,
+      loop:true,
+      items:4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+     });
 
 });
