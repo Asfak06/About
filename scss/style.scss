@@ -1,25 +1,13 @@
 @font-face{
 	src:url('../webfonts/GreatVibes-Regular.ttf');
-	font-family:GreatVibes ;
-	
-}
-@font-face{
-	
-	src:url('../webfonts/PoiretOne-Regular.ttf');
-	font-family:PoiretOne ;
+	font-family:GreatVibes ;	
 }
 @font-face{
 	
 	src:url('../webfonts/IndieFlower-Regular.ttf');
 	font-family:flower ;
 }
-@font-face{
-	
-	src:url('../webfonts/Lobster-Regular.ttf');
-	font-family:lobster ;
-}
-@font-face{
-	
+@font-face{	
 	src:url('../webfonts/SpecialElite-Regular.ttf');
 	font-family:elite ;
 }
@@ -32,7 +20,7 @@ body{
 }
 .heading{
 	padding-top:50px;
-	font-family:PoiretOne;
+	font-family:"Lucida Console", Monaco, monospace;
 	color:#fff;
 	letter-spacing:7px;
 	font-weight: 100;
@@ -113,7 +101,7 @@ body{
 	font-size:150px;
 }
 #ritual .h3{
-	font-family:lobster;
+	font-family:"Comic Sans MS", cursive, sans-serif;
 	letter-spacing:3px;
     font-weight:100;
     font-size:25px;
@@ -214,5 +202,4 @@ body{
 	height: 100%;
 	background: url(../img/225.gif) center center no-repeat;
 }
-
 

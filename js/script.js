@@ -1,8 +1,8 @@
-// $(window).on("load", function() {
-// 	$(".loader .inner").fadeOut(500, function() {
-// 		$(".loader").fadeOut(750);
-// 	});
-// })
+$(window).on("load", function() {
+	$(".loader .inner").fadeOut(500, function() {
+		$(".loader").fadeOut(750);
+	});
+})
 // start square animation
 anime({
   targets:'.square',
@@ -40,16 +40,20 @@ function changer () {
     output.textContent= randomarr ;   
  }
 // end imaginary gift
-$(document).ready(function(){   
-  new WOW().init();
-  $('.toast').toast('show');
+$(document).ready(function(){ 
+
+$('.toast').toast('show');
+
   var typed = new Typed(".typed", {
 		strings: ["♪Everything under the sun is in tune <br> but the sun is eclipsed by the moon♪","_Brain damage(Pink Floyd)"],
-		typeSpeed: 70,
+		typeSpeed:70,
 		loop: true,
-		startDelay: 1000,
+		startDelay: 500,
 		showCursor: false
 	});
+
+ new WOW().init();
+
 	$("#navigation li a").click(function(e) {
 		e.preventDefault();
 		var targetElement = $(this).attr("href");
