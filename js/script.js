@@ -1,7 +1,5 @@
 $(window).on("load", function() {
-	$(".loader .inner").fadeOut(500, function() {
-		$(".loader").fadeOut(750);
-	});
+
 })
 // start square animation
 anime({
@@ -41,6 +39,10 @@ function changer () {
  }
 // end imaginary gift
 $(document).ready(function(){ 
+
+	$(".loader .inner").fadeOut(500, function() {
+		$(".loader").fadeOut(750);
+	});
 
 $('.toast').toast('show');
 
