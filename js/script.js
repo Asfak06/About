@@ -50,7 +50,7 @@ $(document).ready(function(){
 $('.toast').toast('show');
 
   var typed = new Typed(".typed", {
-		strings: ["♪Everything under the sun is in tune <br> but the sun is eclipsed by the moon♪","_Brain damage(Pink Floyd)"],
+		strings: ["♪Everything under the sun is in tune <br> but the sun is eclipsed by the moon♪","_Eclipse(Pink Floyd)"],
 		typeSpeed:70,
 		loop: true,
 		startDelay: 500,
